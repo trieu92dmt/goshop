@@ -1,0 +1,395 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+}
+/*----------------MENU-----------------*/
+nav{
+    width: 100%;
+    display: flex;
+    background-color: #f1fffe;
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+/*----------------LOGO-----------------*/
+.logo{
+    width: 10%;
+    margin-left: 130px;
+    margin-right: 34px;
+}  
+.logo img{
+    width: 100%;
+}
+/*--------------THẺ PHỤ------------------*/
+.under{
+    height: 120px;
+}
+/*---------------MENU TRÊN------------*/ 
+.menus{
+    width: 80%;
+}
+.menu{
+    width: 100%;
+    display: flex;
+    margin: 10px;
+}
+.search{
+    width: 70%;
+    display: flex;
+}
+.search>h4{
+    margin: 0;
+    width: 7%;
+}
+.search>input{
+    width: 88%;
+    height: 30px;
+    border: 1px solid #306199;
+    outline: none;
+}
+.search>a{
+    text-align: center;
+    display: block;
+    width: 5%;
+    padding-top: 8px;
+    background-color: #306199;
+    height: 25px;
+    border: 1px solid #306199;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    text-decoration: none;
+    color: white;
+}
+.account{
+    width: 30%;
+    display: flex;
+    margin-left: 100px;
+}
+.do-account{
+    width: 50%;
+    text-align: center;
+}
+.do-account>a{
+    background-color: white;
+    font-size: 15px;
+    text-decoration: none;
+    color: #306199;
+    display: block;
+    border: 1px solid #306199;
+    border-radius: 10px;
+    padding:10px;
+    width: 50%;
+}
+.do-account>a:hover{
+    background-color: #306199;
+    color: white;
+}
+/*----------------MENU DƯỚI----------------*/
+.menu>.menu-2{
+    width: 50%;
+    text-align: center;
+}
+.second{
+    width: 95%;
+}
+.menu-2>a{
+    display: block;
+    font-size: 15px;
+    border: 1px solid white;
+    background-color: #306199;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+}
+.menu-2>a:hover{
+    border: 1px solid #306199;
+    background-color: #437ac8;
+}
+/*-------------------BUTTON GO TO TOP--------------*/
+#gototop{
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    background-color: #306199;
+    border-radius: 10px;
+    opacity: 0.7;
+    font-size: 30px;
+    display: none;
+    text-align: center;
+    padding: 4px 6px;
+    color: white;
+}
+#gototop:hover{
+    border: 4px solid #306199;
+    background-color: white;
+    color: blue;
+}
+/*-------------------DANH MUC SP-------------*/
+header{
+    margin-left: 90px;
+    display: flex;
+}
+.bar{
+    width: 15%;
+    margin: 10px;
+    padding: 0;
+    background-color: white;
+    list-style-type: none;
+}
+#danhmuc{
+    color: white;
+    background-color: #306199;
+    text-align: center;
+    padding: 10px;
+}
+.bar>li{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: relative;
+}
+.bar>li>h4{
+    margin: 0;
+}
+.bar>li>a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding: 10px
+}
+.bar>li>a:hover{
+    background-color: #306199;
+    color: white;   
+}
+/*---------------------DANH MUC AN-------------*/
+.subbar{
+    width: 250px;
+    position: absolute; 
+    left: 212px;
+    top: 0;
+    list-style-type: none;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+    z-index: 9999;
+    background-color: white;
+}
+.bar>li:hover .subbar{
+    visibility: visible;
+    opacity: 1;
+}
+.subbar a{
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+}
+.subbar a:hover{
+    color:#306199;
+}
+/*-----------------BANNER---------------*/
+.intro{
+    width: 1140px;
+    height: 280px;
+    margin: 10px 40px 10px 0px;
+    position: relative;
+}
+.banner{
+    width: 100%;
+    height: 280px;
+    position: absolute;
+    overflow: hidden;
+}
+.banner>div{
+    width: 1140px;
+    height: 280px;  
+    flex-shrink: 0;
+    position: absolute;
+}
+.banner>div>img{
+    width: 100%;
+    height: 280px;
+}
+.prev{
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 999;
+    top: 120px;
+    left: 10px;
+    background-color: #504f4f;
+    opacity: 0.6;
+}
+.next{
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 999;
+    top: 120px;
+    right: 10px;
+    background-color: #504f4f;
+    opacity: 0.6;
+}
+.prev:hover, .next:hover{
+    opacity: 1;
+}
+.slider{
+    display: flex;
+    position: relative;
+    width: 1140px;
+    height: 270px;
+    overflow: hidden;
+}
+.slider>div{
+    flex-shrink: 0;
+    width: 1140px;
+    height: 270px;
+    position: absolute;
+}
+.slider>div>img{
+    width: 100%;
+    height: 270px;
+}
+#slide-1{
+    left: -1140px;
+}
+#slide-2{
+    left: 0;
+}
+#slide-3{
+    left: 1140px;
+}
+#slide-4{
+    left: 2280px;
+}
+/*-------------CONTENT--------------*/
+section{
+    margin-top: 20px;
+    clear: both;
+}
+.show-product{
+    margin: 20px 100px;
+}
+.product-title{
+    font-size: 25px;
+    background-color: #306199;
+    color: white;
+    padding: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.products{
+    background-color: white;
+    display: flex;
+}
+.product{
+    width: 20%;
+    margin: 1%;
+    padding: 15px;
+    border: 1px solid white;
+    box-shadow: 0 1px 3px #306199;
+}
+.product>a>img{
+    width: 100%;
+}
+.product>a>img:hover{
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+.product>h1{
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
+}
+.product>h2{
+    font-size: 15px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.page{
+    text-align: center;
+}
+/*-----------------CSS FOOTER--------------*/
+footer{
+    background-color: white;
+}
+.contact{
+    border-top: 5px solid #306199;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+}
+.infor{
+    width: 33%;
+    border-right: 2px solid gray;
+}
+.question{
+    width: 33%;
+}
+.infor>ul{
+    list-style-type: none;
+    text-align: left;
+}
+.question>form>ul{
+    list-style-type: none;
+    text-align: left;
+}
+form>ul>li input{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+}
+input[type=submit]{
+    width: 30%;
+    padding: 10px;
+    background-color: #306199;
+    border: 1px solid #306199;
+    color: white;
+    border-radius: 10px;
+}
+.final{
+    border-top: 2px solid #306199;
+    border-bottom: 3px solid #306199;
+    padding: 10px;
+    text-align: center;
+}
+/*-----------------*/
+
+/* hiệu ứng loading */
+.preload{
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+    background-color: #306199;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    color: white;
+    padding-top: 300px;
+    padding-left: 700px;
+    font-size: 30px;
+}
+.preload>div{
+    padding-bottom: 10px;
+}
+.preload>i{
+    font-size: 50px;
+    animation: xoay 1s infinite;
+    margin-left: 40px;
+}
+@keyframes xoay{
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0);
+    }
+}

@@ -1,0 +1,159 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*---------------BACKGROUND BODY------------------*/
+body{
+    height: 700px;
+    background-image: url(../images/wall2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+/*---------------HEAD PAGE------------------------*/
+.headpage{
+    display: flex;
+}
+.headpage>h1{
+    font-size: 20px;
+    width: 10%;
+    margin: 0;
+}
+.headpage>h1>a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+}
+.login{
+    position: absolute;
+    right: 0;
+}
+header{
+    color: white;
+    font-size: 40px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 5px;
+}
+/*---------------BACKGROUND CONTENT------------------*/
+.background {
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    width: 30%;
+    height: 500px;
+    top: 140px;
+    left: 535px;
+}
+/*-------------------CONTENT---------------------*/
+/*-------------------BỐ CỤC CONTENT--------------*/
+.content{
+    position: absolute;
+    width: 30%;
+    height: 500px;
+    top: 140px;
+    left: 535px;
+}
+.content>ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.content>ul>li{
+    text-align: left;
+    font-size: 20px;
+    width: 70%;
+    margin: 10px 13% 20px;
+    padding-bottom: 20px;
+    padding: 10px;
+}
+.content>ul>li:first-child{
+    border:none;
+}
+.content>ul>li>h4{
+    margin: 0;
+    padding: 20px;
+    color: #72bfd1;
+    text-align: center !important;
+}
+.input{
+    border: 1px solid #00ff14;
+}
+.input>i{
+    width: 5%;
+}
+.input>input{
+    background: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 85%;
+    color: white;
+}
+.content>ul>li:nth-child(4){
+    font-size: 15px;
+    margin-bottom: 5px !important;
+}
+.content>ul>li:nth-child(4)>a{
+    text-decoration: none;
+    color: lightblue;
+    padding-left: 85px;
+}
+.submit{
+    text-align: center !important;
+}
+.submit>input{
+    padding: 10px;
+    background-color: #72bfd1;
+    border: #72bfd1;
+    color: white;
+}
+.quick-login{
+    display: flex;
+}
+.quick-login>a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 50%;
+    text-align: center;
+    padding: 5px;
+}
+.quick-login>a:first-child{
+    background-color: #29487d;
+}
+.quick-login>a:last-child{
+    background-color: #ce0c0c;
+}
+/* hiệu ứng loading */
+.preload{
+    z-index: 999999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #306199;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+    padding-top: 300px;
+    font-size: 30px;
+}
+.preload>div{
+    padding-bottom: 10px;
+}
+.preload>i{
+    font-size: 50px;
+    animation: xoay 1s infinite;
+}
+@keyframes xoay{
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0);
+    }
+}

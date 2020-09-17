@@ -1,0 +1,192 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*---------------BACKGROUND BODY------------------*/
+body{
+    height: 700px;
+    background-image: url(../images/wall2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+/*---------------HEAD PAGE------------------------*/
+.headpage{
+    display: flex;
+}
+.headpage>h1{
+    font-size: 20px;
+    width: 10%;
+    margin: 0;
+}
+.headpage>h1>a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+}
+.login{
+    position: absolute;
+    right: 0;
+}
+header{
+    color: white;
+    font-size: 40px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 5px;
+}
+/*---------------BACKGROUND CONTENT------------------*/
+.background {
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    width: 60%;
+    height: 500px;
+    top: 140px;
+    left: 300px;
+}
+/*-------------------CONTENT---------------------*/
+/*-------------------BỐ CỤC CONTENT--------------*/
+.content{
+    position: absolute;
+    width: 60%;
+    height: 500px;
+    top: 140px;
+    left: 300px;
+}
+.content>ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.content>ul>li{
+    width: 435px;
+    height: 320px;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+.content>ul>li:first-child{
+    border-right: 1px solid white;
+}
+/*------------------LEFT CONTENT----------------*/
+.infor{
+    margin-top: 30px;
+    list-style-type: none;
+    text-align: left;
+    line-height: 50px;
+    font-size: 16px;
+    margin-left: 60px;
+}
+.textbox{
+    height: 40px;
+    width: 70%;
+    border-bottom: 1px solid white;
+    font-size: 12px;
+}
+.textbox>span{
+    font-size: 12px;
+    display: inline-block;
+    width: 30%;
+}
+
+.textbox>input{
+    background: none;
+    color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 59%;
+    font-size: 12px;
+}
+.textbox>input[type=radio]{
+    width: 30px;
+}
+/*--------------------RIGHT CONTENT------------------*/
+.account{
+    margin-top: 30px;
+    list-style-type: none;
+    text-align: left;
+    line-height: 50px;
+    font-size: 16px;
+    margin-left: 60px;
+}
+.textbox2{
+    height: 40px;
+    width: 70%;
+    border-bottom: 1px solid white;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.textbox2>span{
+    display: inline-block;
+    width: 40%;
+}
+.textbox2>input{
+    padding: 10px;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    width: 50%;
+    font-size: 12px;
+}
+.capcha{
+    width: 30%;
+}
+/*-----------------------SUBMIT-----------------*/
+.submit{
+    width: 910px !important;
+    height: 140px !important;
+    margin-top: 30px;
+}
+.submit>span{
+    text-align: center;
+    font-size: 15px;
+}
+.submit>span>a{
+    text-decoration: none;
+    color: yellow;
+}
+.submit>input{
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+}
+.submit>input:hover{
+    border: 1px solid green;
+}
+/* hiệu ứng loading */
+.preload{
+    z-index: 999999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #306199;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+    padding-top: 300px;
+    font-size: 30px;
+}
+.preload>div{
+    padding-bottom: 10px;
+}
+.preload>i{
+    font-size: 50px;
+    animation: xoay 1s infinite;
+}
+@keyframes xoay{
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0);
+    }
+}

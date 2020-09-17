@@ -1,0 +1,251 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+}
+/*----------------MENU-----------------*/
+nav{
+    width: 100%;
+    display: flex;
+    background-color: #f1fffe;
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+/*----------------LOGO-----------------*/
+.logo{
+    width: 10%;
+    margin-left: 130px;
+    margin-right: 34px;
+}  
+.logo img{
+    width: 100%;
+}
+/*--------------THẺ PHỤ------------------*/
+.under{
+    height: 120px;
+}
+/*---------------MENU TRÊN------------*/ 
+.menus{
+    width: 80%;
+}
+.menu{
+    width: 100%;
+    display: flex;
+    margin: 10px;
+}
+.search{
+    width: 70%;
+    display: flex;
+}
+.search>h4{
+    margin: 0;
+    width: 7%;
+}
+.search>input{
+    width: 88%;
+    height: 30px;
+    border: 1px solid #306199;
+    outline: none;
+}
+.search>a{
+    text-align: center;
+    display: block;
+    width: 5%;
+    padding-top: 8px;
+    background-color: #306199;
+    height: 25px;
+    border: 1px solid #306199;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    text-decoration: none;
+    color: white;
+}
+.account{
+    width: 30%;
+    display: flex;
+    margin-left: 100px;
+}
+.do-account{
+    width: 50%;
+    text-align: center;
+}
+.do-account>a{
+    background-color: white;
+    font-size: 15px;
+    text-decoration: none;
+    color: #306199;
+    display: block;
+    border: 1px solid #306199;
+    border-radius: 10px;
+    padding:10px;
+    width: 50%;
+}
+.do-account>a:hover{
+    background-color: #306199;
+    color: white;
+}
+/*----------------MENU DƯỚI----------------*/
+.menu>.menu-2{
+    width: 50%;
+    text-align: center;
+}
+.second{
+    width: 95%;
+}
+.menu-2>a{
+    display: block;
+    font-size: 15px;
+    border: 1px solid white;
+    background-color: #306199;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+}
+.menu-2>a:hover{
+    border: 1px solid #306199;
+    background-color: #437ac8;
+}
+/*-------------------BUTTON GO TO TOP--------------*/
+#gototop{
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    background-color: #306199;
+    border-radius: 10px;
+    opacity: 0.7;
+    font-size: 30px;
+    display: none;
+    text-align: center;
+    padding: 4px 6px;
+    color: white;
+}
+#gototop:hover{
+    border: 4px solid #306199;
+    background-color: white;
+    color: blue;;
+}
+/*------------------------------------------------*/
+.address{
+    background-color: lightyellow;
+    padding: 10px 85px;
+    font-size: 13px;
+}
+.address>a{
+    text-decoration: none;
+}
+/*------------------------------------------------*/
+div.img{
+    width: 45%;
+}
+div.info{  
+    width: 55%;
+    padding-left: 5%;
+}
+div.img img{
+    background-color: antiquewhite;
+    padding: 2%;
+    width:100% ;
+}
+.section1{
+    display:flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2>span{
+    color: red;
+}
+ul.baohanh{
+    list-style-type: none;
+}
+.dathang{
+    color: white;
+    background-color: rgb(72, 48, 184);
+    width: 20%;
+    padding:1%;
+    border-radius: 50%;
+}
+.soluong{
+    text-align: center;
+    width: 10%;
+    padding:0;
+    border-radius: 2%;
+}
+.submit{
+    text-align: center;
+}
+.chitietsp{
+    padding: 10px;
+    margin: 0px 75px 50px;
+    border: 2px solid black;
+}
+h3{
+    font-weight: lighter;
+}
+/*---------------------Thumbnail------------------*/
+.thumbnail{
+    display: flex;
+    list-style-type: none;
+    margin :0;
+    padding : 0;
+}
+.thumbnail>li{
+    width: 20%;
+    margin: 10px;
+}
+.thumbnail>li>img{
+    width: 100%;
+}
+.thumbnail>li:hover{
+    transform: scale(1.2);
+}
+/*--------------------CSS FOOTER-------------------*/
+footer{
+    background-color: white;
+}
+.contact{
+    border-top: 5px solid #306199;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+}
+.infor{
+    width: 33%;
+    border-right: 2px solid gray;
+}
+.question{
+    width: 33%;
+}
+.infor>ul{
+    list-style-type: none;
+    text-align: left;
+}
+.question>form>ul{
+    list-style-type: none;
+    text-align: left;
+}
+form>ul>li input{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+}
+input[type=submit]{
+    width: 30%;
+    padding: 10px;
+    background-color: #306199;
+    border: 1px solid #306199;
+    color: white;
+    border-radius: 10px;
+}
+.final{
+    border-top: 2px solid #306199;
+    border-bottom: 3px solid #306199;
+    padding: 10px;
+    text-align: center;
+}

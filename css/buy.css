@@ -1,0 +1,311 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/*--------------CSS menu---------------*/
+nav{
+    background-color:  #f1fffe;
+}
+nav>div{
+    width: 70%;
+    margin-left: 240px;
+    align-items: center;
+}
+.logo{
+    width: 25%;
+}
+.menu{
+    width: 75%;
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 105px;
+}
+.menu>div{
+    width: 33%;
+}
+nav img{
+    width: 100%;
+    height: 140px;
+}
+a.text{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 10px;
+    color: white;
+    background-color: #306199;
+    border: 1px solid #306199;
+    padding: 10px;
+    border-radius: 10px;
+}
+a.text:hover{
+    color: #306199;
+    background-color: white;
+    border: 1px solid #306199;
+}
+/*-----------------CSS-button-next-step-----------*/
+.next{
+    width: 100%;
+}
+.next>ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+.next>ul>li{
+    width: 5%;
+    text-align: center;
+    border: 1px solid #1da541;
+    border-radius: 20px;
+    background-color: white;
+    color: #1da541;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.next>ul>li:first-child{
+    background-color: #1da541;
+    color: white;
+}
+/*********CSS Content*******************/
+section{
+    margin: 30px;
+}
+/*step-1*/
+#product{
+    text-align: center;
+}
+#product ul{
+    display: flex;
+    width: 90%;
+    text-align: center;
+    list-style-type: none;
+    padding:0;
+    border: 1px solid lightgray;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+#product ul>li:first-child{
+    width: 10%;
+    padding: 0;
+    border-left: none;
+}
+#product ul>li{
+    width: 25%;
+    padding-top: 50px;
+    border-left: 1px solid lightgray;
+}
+#product ul>li:last-child{
+    width: 40%;
+}
+#product ul>li>input[type=number]{
+    text-align: center;
+    width: 90px;
+}
+#product ul>li>img{
+    width: 100%;
+}
+#product h2{
+    color: red;
+}
+/*step-2*/
+#infor{
+    display: none;
+    text-align: left;
+}
+.customer{
+    width: 50%;
+    padding-left: 15%;
+    padding-right: 80px;
+}
+.customer>ul{
+    list-style-type: none;
+    padding: 0;
+}
+.customer>ul>li{
+    padding: 10px;
+}
+.customer>ul>li>input{
+    width: 100%;
+}
+.customer>ul>li>select{
+    width: 100%;
+}
+.infor-product{
+    width: 50%;
+    padding-left: 80px;
+    padding-right: 15%;
+}
+.infor-product>ul{
+    list-style-type: none;
+    padding: 0;
+}
+.infor-product>ul>li:first-child{
+    width: 40%;
+}
+.infor-product>ul>li{
+    padding: 10px;
+}
+.infor-product img{
+    width: 100%;
+}
+input[type=email]{
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid lightgray;
+}
+select{
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid lightgray;
+}
+/*step-3*/
+#pay{
+    display: none;
+    text-align: left;
+}
+.payment{
+    width: 50%;
+    padding-left: 15%;
+    padding-right: 80px;
+}
+.payment>ul{
+    list-style-type: none;
+    padding: 0;
+}
+.howtopay{
+    display: flex;
+    flex-direction: column;
+}
+.howtopay>div{
+    padding-top: 5px;
+}
+.slide{
+    display: none;
+}
+.slide>div{
+    padding-top: 5px;
+    margin-left: 20px;
+}
+textarea{
+    width: 100%;
+    height: 70px;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+}
+/*step-4*/
+#done{
+    display: none;
+}
+#done>div>div{
+    width: 50%;
+}
+.sum-up{
+    width: 50%;
+    padding-left: 15%;
+    padding-right: 80px;
+}
+#done>div>div>i{
+    font-size: 60px;
+    color: #1da541;
+    padding: 10px;
+}
+.main{
+    border: 1px solid lightgray;
+    padding: 20px;
+}
+.main ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.main ul>li{
+    padding: 10px;
+}
+/*button*/
+input[type=button],input[type=submit]{
+    margin-top: 20px;
+    background-color: #306199;
+    border: 1px solid #306199;
+    outline: none;
+    color: white; 
+    padding :10px 30px;
+    border-radius: 10px;
+}
+input[type=button]:hover,input[type=submit]:hover{
+    background-color: white;
+    color: #306199;
+    border: 1px solid#306199;
+}
+input[type=number],input[type=text]{
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid lightgray;
+}
+input.check{
+    margin: 0;
+}
+/*------------CSS FOOTER---------------*/
+footer{
+    display: flex;
+    background-color: #306199;
+}   
+footer>div{
+    width: 50%;
+    padding: 20px 20px 30px;
+    text-align: center;
+    border: 1px solid white;
+    color: white;
+}
+.social>span{
+    padding: 30px;
+}
+.social a{
+    color: white;
+}
+footer>div:nth-child(2)>div{
+    margin-bottom: 0;
+}
+/* hiệu ứng loading */
+.preload{
+    z-index: 999999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #306199;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+    padding: 300px;
+    font-size: 30px;
+}
+.preload>div{
+    padding-bottom: 10px;
+}
+.preload>i{
+    font-size: 50px;
+    animation: xoay 1s infinite;
+}
+@keyframes xoay{
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0);
+    }
+}
